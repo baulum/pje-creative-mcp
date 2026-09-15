@@ -10,8 +10,12 @@ const inputShape = {
     .string()
     .min(1)
     .describe(
-      'Full image prompt. Write it as a scene description: subject, environment, composition, ' +
-        'camera and lens, lighting, materials, atmosphere. Avoid generic "AI art" wording.',
+      'Full image prompt. For photorealistic results, avoid "AI art" language like "stunning", ' +
+        '"hyper-realistic", "magical". Instead: specify materials (oak, marble, steel), time of day, ' +
+        'photography technique (film aesthetic, 35mm lens, shallow depth of field, golden hour lighting). ' +
+        'Example good prompt: "Morning light through tall windows into minimalist office. Walnut desks, ' +
+        'warm leather chairs. Shot with 50mm lens, natural shadows, documentary photography style." ' +
+        'Use /enhance-prompt skill to optimize your prompt.',
     ),
   model: z
     .string()
