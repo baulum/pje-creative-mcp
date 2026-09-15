@@ -762,7 +762,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
 
   // -------------------------------------------------------------- GPT Image 2.0 --
   {
-    id: 'gpt-image-2/text-to-image',
+    id: 'gpt-image-2-text-to-image',
     provider: 'kie',
     label: 'GPT Image 2.0 - Text to Image',
     type: 'image',
@@ -779,7 +779,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
     },
   },
   {
-    id: 'gpt-image-2/image-to-image',
+    id: 'gpt-image-2-image-to-image',
     provider: 'kie',
     label: 'GPT Image 2.0 - Image to Image',
     type: 'image',
@@ -799,7 +799,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
 
   // -------------------------------------------------------- GPT Image 2.5 Flare --
   {
-    id: 'gpt-image-2-5-flare/text-to-image',
+    id: 'gpt-image-2-5-flare-text-to-image',
     provider: 'kie',
     label: 'GPT Image 2.5 Flare - Text to Image',
     type: 'image',
@@ -816,7 +816,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
     },
   },
   {
-    id: 'gpt-image-2-5-flare/image-to-image',
+    id: 'gpt-image-2-5-flare-image-to-image',
     provider: 'kie',
     label: 'GPT Image 2.5 Flare - Image to Image',
     type: 'image',
@@ -836,7 +836,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
 
   // ------------------------------------------------------- GPT Image 2.5 Sunburst --
   {
-    id: 'gpt-image-2-5-sunburst/text-to-image',
+    id: 'gpt-image-2-5-sunburst-text-to-image',
     provider: 'kie',
     label: 'GPT Image 2.5 Sunburst - Text to Image',
     type: 'image',
@@ -853,7 +853,7 @@ export const IMAGE_MODELS: ModelDefinition[] = [
     },
   },
   {
-    id: 'gpt-image-2-5-sunburst/image-to-image',
+    id: 'gpt-image-2-5-sunburst-image-to-image',
     provider: 'kie',
     label: 'GPT Image 2.5 Sunburst - Image to Image',
     type: 'image',
