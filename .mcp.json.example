@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "pje-creative": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${CLAUDE_PROJECT_DIR}/dist/index.js"],
+      "env": {
+        "KIE_API_KEY": "your_kie_api_key_here",
+        "PJE_OUTPUT_DIR": "${CLAUDE_PROJECT_DIR}/output",
+        "PJE_LOG_LEVEL": "info"
+      },
+      "timeout": 900000
+    }
+  }
+}

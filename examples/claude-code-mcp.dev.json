@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "pje-creative": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "tsx", "${CLAUDE_PROJECT_DIR}/src/index.ts"],
+      "env": {
+        "KIE_API_KEY": "your_kie_api_key_here",
+        "PJE_LOG_LEVEL": "debug"
+      },
+      "timeout": 900000
+    }
+  }
+}

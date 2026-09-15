@@ -1,0 +1,36 @@
+{
+  "name": "pje-creative-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the KIE.ai creative API (image generation, image editing, text-to-video, image-to-video, video-to-video, upscaling).",
+  "type": "module",
+  "bin": {
+    "pje-creative-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --import tsx tests/*.test.ts",
+    "inspect": "npx -y @modelcontextprotocol/inspector tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.2.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  }
+}
