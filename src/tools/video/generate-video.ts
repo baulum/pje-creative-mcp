@@ -10,9 +10,12 @@ const inputShape = {
     .string()
     .min(1)
     .describe(
-      'Video prompt. Describe subject, action, camera movement, subject movement, environment ' +
-        'movement, lighting, timing and composition - motion is what separates a video prompt from ' +
-        'an image prompt.',
+      'Video prompt. CRITICAL: Specify camera movement first (static/pan/dolly/rack focus), then subject ' +
+        'movement with realistic timing (not rushed or slow-motion unless specified). Include: duration in seconds, ' +
+        'specific lighting (golden hour, direction, shadows), materials/textures, cinematography style (documentary/ ' +
+        'film/commercial), color grading direction. Example: "Static camera. Hands type on oak desk at natural pace. ' +
+        'Warm morning light from left creating soft shadows. 8 seconds. Documentary style, warm color grading." ' +
+        'Avoid: "cinematic", "beautiful", "stunning". Use /enhance-video-prompt to optimize.',
     ),
   model: z
     .string()
